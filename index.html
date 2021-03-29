@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -18,10 +19,69 @@
         crossorigin="anonymous"></script>
 
     <style>
+        * {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
         #main {
-            padding: 30px 0;
-            max-width: 800px;
             margin: 0 auto;
+        }
+
+        p,
+        li,
+        td {
+            font-family: serif;
+        }
+
+        .display-4{
+            font-size: 2.3em;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            margin-top: 30px;
+        }
+
+        hr {
+            border-top: 2px dashed rgba(0, 0, 0, .1);
+            margin-bottom: 30px;
+        }
+
+        .accordion {
+            margin-bottom: 30px;
+        }
+
+        th {
+            vertical-align: baseline;
+            padding-right: 30px;
+        }
+
+        #profile {
+            width: 150px;
+
+        }
+
+        .card-header {
+            padding: 0;
+        }
+
+        .nav-link {
+            border: solid 1px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        .card-header{
+            background: transparent;
+        }
+
+        .btn-link, a{
+            color: #19712c !important;
         }
     </style>
 
@@ -32,15 +92,778 @@
 
     <div id="main">
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Jonathan Bestwick</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium magnam molestias iste quam
-                        numquam voluptates, ipsam neque totam inventore cum animi cumque obcaecati, quasi deserunt
-                        doloremque accusamus alias, harum veritatis.</p>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-2 mt-3"><img id="profile" src="profile.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h1 class="display-4">Jonathan Bestwick</h1>
+                        <p class="lead">Passionate about being a catalyst in the journey of young people fulfilling
+                            their potential and becoming more than they ever thought they could be.</p>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <tr>
+                            <th>First Names:</th>
+                            <td>Jonathan Kevin</td>
+                        </tr>
+                        <tr>
+                            <th>Preferred Name:</th>
+                            <td>Jono</td>
+                        </tr>
+                        <tr>
+                            <th>Surname:</th>
+                            <td>Bestwick</td>
+                        </tr>
+                        <tr>
+                            <th>Identity Number:</th>
+                            <td>8401056000088</td>
+                        </tr>
+                        <tr>
+                            <th>Passport Number:</th>
+                            <td>442509048 </td>
+                        </tr>
+                        <tr>
+                            <th>Date of Birth:</th>
+                            <td>05 January 1984</td>
+                        </tr>
+                        <tr>
+                            <th>Gender:</th>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <th>Status:</th>
+                            <td>Married to Chantal with 2 children - Nathan 6 & Josh 4yrs </td>
+                        </tr>
+                        <tr>
+                            <th>Driver's License:</th>
+                            <td>South Africa - Any vehicle up to 16t – Prof. drivers permit<br />
+                                Western Australian drivers license (expired)<br />
+                                NSW Motorboat license (expired)</td>
+                        </tr>
+                        <tr>
+                            <th>Country of Birth:</th>
+                            <td>Zimbabwe</td>
+                        </tr>
+                        <tr>
+                            <th>Home Language:</th>
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <th>Criminal Offences:</th>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <th>Health:</th>
+                            <td>Controlled Epileptic and in excellent health.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col">
+                    <table>
+                        <tr>
+                            <th>Work Phone:</th>
+                            <td>+2739 685 4793</td>
+                        </tr>
+                        <tr>
+                            <th>Cell Phone: </th>
+                            <td>+2779 934 2844</td>
+                        </tr>
+                        <tr>
+                            <th>Email:</th>
+                            <td><a href="mailto:impilo@skogheim.org.za">impilo@skogheim.org.za</a><br />
+                                <a href="mailto:jonobestwick@gmail.com">jonobestwick@gmail.com</a><br />
+                                <a href="mailto:chantsandjono@gmail.com">chantsandjono@gmail.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Address:</th>
+                            <td>Skogheim Conference Centre</br>
+                                Cnr P200 & D247</br>
+                                Izotsha Rd</br>
+                                Port Shepstone</br>
+                                Kwa-Zulu Natal</br>
+                                South Africa</td>
+                        </tr>
+                        <tr>
+                            <th>Social Media:</th>
+                            <td><a href="https://www.facebook.com/jonathan.bestwick" target="_blank">Facebook</a> </br>
+                                <a href="https://www.instagram.com/bestwickjonathan" target="_blank">Instagram</a> </br>
+                                <a href="https://twitter.com/Boemslang58" target="_blank">Twitter</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tertiary">Tertiary Qualifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#post">Post High School Education and
+                                Training</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#volunteer">Executive Volunteer Involvement</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#employment">Employment</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#school">School Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#references">References</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col">
+                    <a name="about"></a>
+                    <h2>About Me</h2>
+                    <p>I love the Lord Jesus and am wonderfully indebted to His grace, His plan for my life and to
+                        praise Him in all I do, however menial. I thank God for the incredible blessing of my wife and
+                        boys and for the way he has directed my life. I am passionate about being a catalyst in the
+                        journey of young people fulfilling their potential and becoming more than they ever thought they
+                        could be. Add the outdoors and the incredible tools of experiential learning and residential or
+                        expedition camping to the mix and I am in my element. I am amazed by the human spirit and never
+                        surprised by human frailties including my own. I love unique people and enjoy the challenge of
+                        renewing messy or broken individuals. I am easily inspired by experienced people in the
+                        Christian Camping industry and love to learn from them even at the expense of my own pride. I
+                        tend to see the best in people and this is both a strength and a weakness. I don’t take myself
+                        too seriously but am completely professional when needed.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col">
+                    <a name="tertiary"></a>
+                    <h2>Tertiary Qualifications</h2>
+                    <ul>
+                        <li>UNISA Bachelors of Arts degree in Psychological Counselling - 2014</li>
+                        <li>UNISA Bachelor of Arts Honours - Applied Psychology (post graduate) - 2017</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col">
+                    <a name="post"></a>
+                    <h2>Post High School Education and Training</h2>
+                    <div class="accordion" id="accordion">
+
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">International Qualifications</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <div>
+                                        <strong>AQF Qualifications</strong>
+                                        <ul>
+                                            <li>Certificate IV Outdoor Recreation - 2007</li>
+                                            <li>Certificate IV Training and Assessment – 2010</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <strong>American Hotel & Lodging Educational institute (AHLEI)</strong>
+                                        <ul>
+                                            <li>Certified Guest Service Professional - 2015</li>
+                                            <li>Certified Hospitality Department Trainer - 2016</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <strong>WMI, Leaders in Wilderness rescue and First Aid (LWAFA), 60 hour 1st aid
+                                            (expired)</strong><br />
+                                        <strong>Royal Lifesaving Bronze Medallion (expired)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo">National Certificates</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <div>
+                                        <strong>S.A.Q.A. accredited qualifications</strong>
+                                        <ul>
+                                            <li>ETDP SETA level 5, Moderation of assessment - 2017</li>
+                                            <li>ETDP SETA level 5, Outcomes based assessment - 2017</li>
+                                            <li>ETDP SETA level 5, Facilitation using different methodologies - 2017
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <strong>Other Certificates</strong>
+                                        <ul>
+                                            <li>Rencor Frist Aid Advanced Level 3 (Wilderness components) – 2019
+                                                (current)</li>
+                                            <li>Bible Centered Ministries – Train the Trainer Sunday school teacher
+                                                certificate - 2013</li>
+                                            <li>Extreme Life, Certificate in facilitated learning - 2010</li>
+                                            <li>Reka Fire Margate – Certificate of training in the use of basic Fire
+                                                Equipment - 2015</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <strong>Labour Guide Training</strong>
+                                        <ul>
+                                            <li>Certificate in the OHS Act and the responsibilities of Management - 2013
+                                            </li>
+                                            <li>Certificate in Health and Safety Representative - 2013</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <strong>South African Professional Firearm Trainers Council – Competency
+                                            Certificates</strong>
+                                        <ul>
+                                            <li>Handgun</li>
+                                            <li>Rifle</li>
+                                            <li>Shotgun</li>
+                                            <li>Carbine/Self-loading rifl</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col">
+                    <a name="volunteer"></a>
+                    <h2>Executive Volunteer Involvement</h2>
+                    <div class="accordion" id="accordionTwo">
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="true"
+                                        aria-controls="collapseThree">CCSA (Christian Camping Southern Africa) Executive
+                                        board member - 2014 to 2016</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionTwo">
+                                <div class="card-body">
+                                    <p>Elected board member to represent the KZN province. CCSA is an association of
+                                        Christian camps, ministries and individuals who all share a passion for venue
+                                        and/or programme based ministry. The executive committee oversees all countries
+                                        in the SADC region including Zimbabwe, Namibia and Mozambique. The committee
+                                        manages the business of the association and seeks to support its members by
+                                        keeping abreast of all local and international developments in the industry.
+                                        Personal, individual contact and relationship building is key to supporting the
+                                        membership. CCSA as an association is 43 years old. CCSA is accountable to
+                                        Christian Camping International.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseFour">Scripture Union (KZN South Coast) Executive
+                                        committee chairperson – 2016 to 2019</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionTwo">
+                                <div class="card-body">
+                                    <p>My role as chairperson of SU South Coast was to lead the regional executive
+                                        committee as we supported the team of employed and volunteer staff ministering
+                                        with the SU South Coast region. I provided direct support in an advisory and
+                                        mentorship role to the Regional Director and established an environment where SU
+                                        staff felt supported and fulfilled in their ministry. I stood down from the role
+                                        in order to focus on my role as Chairperson at CCSA.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseFive" aria-expanded="true"
+                                        aria-controls="collapseFive">CCSA Executive board chairperson – 2017 to
+                                        present</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordionTwo">
+                                <div class="card-body">
+                                    <p>Leading a dynamic and opinionated team of Godly, strong willed leaders is a
+                                        wonderfully rewarding challenge. It is a privilege to serve our Christian
+                                        Camping industry and to have the opportunity to travel to other African
+                                        countries to represent CCSA and to assist with association building and
+                                        training. Leading CCSA through these corona affected times hasn the importance
+                                        and impact of personal relationship building within our members as we have
+                                        sought to be there for sites that have had to close and members who have lost
+                                        their jobs over this difficult time.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseSix" aria-expanded="true"
+                                        aria-controls="collapseSix">Christian Supply Chain and Buy in Group (CSCBG)
+                                        Board member - 2017 to present</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                data-parent="#accordionTwo">
+                                <div class="card-body">
+                                    <p>CSCBG was created to provide “buy in” power to Christian Camp sites and has a
+                                        structure of rebates that directly financially support CCSA. Wonderfully lead
+                                        and run b y Werner du Plessis, my role as board member is to keep the
+                                        accountability through all transactions, to support Werner in vision,
+                                        encouragement and decision making and to help ensure future growth of this
+                                        developing initiative.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseSeven" aria-expanded="true"
+                                        aria-controls="collapseSeven">KidzCALL Executive Board member – 2017 to
+                                        2019</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                data-parent="#accordionTwo">
+                                <div class="card-body">
+                                    <p>Lead and managed by Chris Eksteen this company was set up to raise funds for
+                                        Christian camps and environmental awareness programming. Its specific focus was
+                                        to ethically approach, pitch, propose and tender to mega funders such as
+                                        national Lotteries to fund and sponsor camping programmes. My role as board
+                                        member was to ensure accountability and to support Chris Eksteen directly in an
+                                        advisory capacity.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingEight">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseEight" aria-expanded="true"
+                                        aria-controls="collapseEight">CCI – West African Association development Coach
+                                        -2018 to present</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                data-parent="#accordionTwo">
+                                <div class="card-body">
+                                    <p>My role as Christian Camping International coach to West Africa is to develop and
+                                        support new CCI association formations in Nigeria, Sierra Leone and Ghana.
+                                        Together with Ross Bay of CCI New Zealand and Dr Muhia Karianjahi from Honeyrock
+                                        USA we travel to West Africa holding conferences and trainings to develop and
+                                        nurture forming CCI association committees and memberships.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col">
+                    <a name="employment"></a>
+                    <h2>Employment</h2>
+
+                    <h3>Skogheim Christian Trust</h3>
+                    <div class="accordion" id="accordionThree">
+
+                        <div class="card">
+                            <div class="card-header" id="headingNine">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseNine" aria-expanded="true"
+                                        aria-controls="collapseNine">Centre Manager - 2019 to present</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                data-parent="#accordionThree">
+                                <div class="card-body">
+                                    <p>Skogheim Christian conference centre is a large camp and conferencing centre
+                                        situated on the South Coast of South Africa. Registered as an NPO and Public
+                                        Benefit Organisation, Skogheim exists to serve those who serve in God’s kingdom.
+                                        My current role as centre manager is part of a three person management team who
+                                        manage the daily running of the centre as a whole. We are also responsible for
+                                        the strategic direction and vision of Skogheim as a ministry. All managers share
+                                        roles with my focus being on programming, ministry development, front of house
+                                        systems, activity development, guest liaison and housekeeping management. I am
+                                        the health and safety representative and responsible for all health and safety
+                                        at Skogheim including the development and implementation of Covid-19 protocols
+                                        and systems.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTen">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseTen" aria-expanded="true"
+                                        aria-controls="collapseTen">Operations Manager - 2017 to 2019</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
+                                data-parent="#accordionThree">
+                                <div class="card-body">
+                                    <p>As well as continuing with my role as programme manager my responsibilities as
+                                        operations manager included marketing, social media and IT responsibilities as
+                                        well as the development and updating of Skogheim’s policies and protocols to an
+                                        international standard. Ministry development, guest liaison and programming
+                                        remained an important aspect of my role at Skogheim. My role also included the
+                                        training and development of established staff.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingEleven">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseEleven" aria-expanded="true"
+                                        aria-controls="collapseEleven">Programme Manager - 2010 to 2017</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                                data-parent="#accordionThree">
+                                <div class="card-body">
+                                    <p>I was originally employed to start and develop youth directed ministries at
+                                        Skogheim. Impilo Neqiniso has been the primary ministry project that involved
+                                        the designing of applicable and impactful programmes and the training of local
+                                        facilitators to run specialized experiential learning camps for learners who
+                                        can’t usually afford to go on “camp”. This required the raising of funds to
+                                        cover the costs of such camps. I also oversaw the creation and running of the
+                                        Daniel Generation Academy – An academy that funds and runs the tertiary
+                                        development of deserving yet economically unfortunate students. This was an
+                                        ongoing curriculum that lasts throughout the student’s tertiary education. It
+                                        has been an incredible opportunity to design, run and facilitate unique
+                                        programmes for specialised groups such as rehab centres, places of safety,
+                                        special needs schools and provincial sports teams.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Outward Bound Australia</h3>
+                    <div class="accordion" id="accordionFour">
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwelve">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwelve" aria-expanded="true"
+                                        aria-controls="collapseTwelve">Team Coordinator - 2007 to 2009</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                                data-parent="#accordionFour">
+                                <div class="card-body">
+                                    <p>This is a non-profit organisation, aspiring to develop and help Australians reach
+                                        their untapped inner-potential. A wide range of programmes are run including
+                                        courses for broken families and youth at risk. Most courses are run as
+                                        wilderness expeditions and the group carries all gear and equipment.</p>
+                                    <p>As Team coordinator for Western Australia my position encompassed many roles. I
+                                        worked primarily in Walpole in the South West. There I was in charge of
+                                        coordinating
+                                        all behind the scene logistics that come with running expedition based courses
+                                        for up to 8 groups (140 participants) at a time. This included developing
+                                        programmes, food ordering, gear and equipment management and also base camp and
+                                        vehicle maintenance. Instructors lived and worked in this remote area for up to
+                                        five months at a time. Managing and maintaining a positive work, as well as
+                                        living environment for these instructors was also a large part of my job. I also
+                                        maintained and nurtured relationships with the local parks associations and
+                                        landowners. I spent time training staff and further developing and expanding the
+                                        area. My responsibility as Team Coordinator was also to handle and coordinate
+                                        any major incidents such as bushfires or medical evacuations. During the winter
+                                        months of the year I worked in Eastern Australia developing and trialing new
+                                        expedition areas. I occasionally instructed high profile courses where a high
+                                        level of facilitation and experience was necessary</p>
+                                    <strong>Training Received</strong>
+                                    <ul>
+                                        <li>Course coordinator Training</li>
+                                        <li>Team coordinator Training and Programming</li>
+                                        <li>C.I.S.M. Psychological Response to Traumatic Stress</li>
+                                        <li>Ropes Course Construction</li>
+                                        <li>High Ropes Rescue</li>
+                                        <li>Swift Water Rescue</li>
+                                        <li>4x4 Off-road training</li>
+                                        <li>Leadership Concepts and models</li>
+                                        <li>Remote communications and Wilderness emergency response</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThirteen">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseThirteen" aria-expanded="true"
+                                        aria-controls="collapseThirteen">Outdoor Instructor and Facilitator -
+                                        2006</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
+                                data-parent="#accordionFour">
+                                <div class="card-body">
+                                    <p>My role was to lead wilderness expedition based personal development courses
+                                        throughout Australia. Activities included high ropes courses, off trail
+                                        navigation and bush walking. These expeditions catered to a full age range of
+                                        cliental from adjudicated youth to corporate adults. The philosophy of Outward
+                                        Bound is one of Learning through experience. Participants are put into
+                                        situations where they are challenged physically, mentally and most significantly
+                                        emotionally. All activities are carefully framed, facilitated and debriefed to
+                                        achieve the highest learning outcomes possible. As the instructor I carefully
+                                        and strategically nurtured the group process. All stages of the group and
+                                        individual development are facilitated. Safety and the importance of balancing
+                                        fun, challenge and learning is also a major role of the facilitation. Service is
+                                        also an important part of the programmes and I have lead many different
+                                        community service projects from combating invasive species to constructing beach
+                                        boardwalks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Outward Bound South Africa</h3>
+                    <div class="accordion" id="accordionFive">
+
+                        <div class="card">
+                            <div class="card-header" id="headingFourteen">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseFourteen" aria-expanded="true"
+                                        aria-controls="collapseFourteen">Outdoor Instructor and Facilitator - 2003 to
+                                        2005</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen"
+                                data-parent="#accordionFive">
+                                <div class="card-body">
+                                    <p>A Non Profit NGO that runs expedition based programmes around South Africa. Their
+                                        primary objective is to help South African’s realize their limitless potential
+                                        through powerful group facilitation techniques and using the outdoors as an
+                                        experiential learning tool.</p>
+                                    <p>My role here was to lead outdoor personal development courses for extended
+                                        periods of up to 21 days, focusing on adjudicated and disadvantage youths as
+                                        well as school and corporate groups. The youth at risk were part of the
+                                        Chrysalis developmental programmes in Cape Town. Many of these youths were
+                                        recently released from juvenile prison and were particularly interesting to
+                                        handle and develop. Whilst 21day expeditions alone with these types of
+                                        individuals were particularly challenging it was also the most powerfully
+                                        rewarding experience of my young life. The principles that Outward Bound was
+                                        built on and the ability for the wilderness programmes to significantly improve
+                                        the attitudes and aspirations of these individuals was awe inspiring.</p>
+                                    <strong>Areas of training</strong>
+                                    <p>Kayaking, Abseiling, Rock Climbing, Hiking, Sailing, High and low ropes elements,
+                                        Expeditioning, Canoeing, Camp Craft, Wilderness Rescue, Group facilitation and
+                                        management, History and philosophy of adventure based education</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h3>Beyond Adventure Extreme Education</h3>
+                    <div class="accordion" id="accordionSix">
+
+                        <div class="card">
+                            <div class="card-header" id="headingSixteen">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseSixteen" aria-expanded="true"
+                                        aria-controls="collapseSixteen">Gap Year - 2003</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen"
+                                data-parent="#accordionSix">
+                                <div class="card-body">
+                                    <p>It was at Beyond Adventure where I was introduced to expedition based
+                                        experiential learning which lead to me working at Outward Bound South Africa.
+                                    </p>
+                                    <strong>The gap year covered the following:</strong>
+                                    <ul>
+                                        <li><strong>Outdoor recreation, facilitation and leadership training - </strong>
+                                            A number of certificates including ARA level 2 and FGHASA (field guiding)
+                                            national certificates that are now expired. (see certificates). Guide
+                                            training in numerous outdoor pursuits including mountain biking, horse
+                                            riding, firearm handling, 4x4 driving etc
+                                        </li>
+                                        <li><strong>MSC (Managerial Secretarial Computing) Private College - </strong>
+                                            Certificates in Microsoft Office computing, basic business startup and
+                                            entrepreneurship skills (see certificates)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col">
+                    <a name="school"></a>
+                    <h2>School Education</h2>
+                    <table>
+                        <tr>
+                            <th>Junior School</th>
+                            <td>St John's Preparatory - <em>Deputy Headboy</em><br />
+                                Borrowdale Harare Zimbabwe<br />
+                                (1991 - 1996)<br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>High School</th>
+                            <td>St John's College (Harare)<br />
+                                Borrowdale Harare Zimbabwe<br />
+                                (1997 - 2002)
+                        </tr>
+                        <tr>
+                            <th>Subjects Passed</th>
+                            <td><strong>Cambridge University A levels</strong><br />
+                                <ul>
+                                    <li>Geography</li>
+                                    <li>Art</li>
+                                </ul>
+                                <strong>Cambridge University O levels</strong><br />
+                                <ul>
+                                    <li>English</li>
+                                    <li>Maths</li>
+                                    <li>Statistics</li>
+                                    <li>Geography </li>
+                                    <li>Art</li>
+                                    <li>Physical Science</li>
+                                    <li>Integrated Science</li>
+                                    <li>Biology</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Sporting Achievements</th>
+                            <td>1st Team Rugby<br />
+                                1st Team Squash<br />
+                                1st team tennis<br />
+                                1st team athletics<br />
+                                Mashonaland Squash (Provincial team)<br />
+                                Zimbabwe u/19 Rugby
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col">
+                    <a name="references"></a>
+                    <h2>References</h2>
+
+                    <ol>
+                        <li><strong>Skogheim Christian Trust</strong> - Ingrid Kjonstad (Previous General Manager) – <a
+                                href="mailto:ingridkjonstad@gmail.com">ingridkjonstad@gmail.com</a></li>
+
+                        <li><strong>CCSA</strong> - Dr Pieter Snyman (previous Chair and current executive board member)
+                            – <a href="mailto:snymanpieterl@gmail.com">snymanpieterl@gmail.com</a></li>
+
+                        <li><strong>CCI</strong> - Dr Muhia Karianjahi (CCI vice chair) – <a
+                                href="mailto:muhia.karianjahi@wheaton.edu">muhia.karianjahi@wheaton.edu</a></li>
+
+                        <li><strong>CCI</strong> - Mark Heasman (previous CCI CEO) – <a
+                                href="mailto:mark@cciworldwide.org">mark@cciworldwide.org</a></li>
+
+                        <li><strong>Scripture Union South Coast</strong> - Erica Langton (founding South Coast board
+                            member) – <a href="mailto:ericajlangton@gmail.com">ericajlangton@gmail.com</a></li>
+
+                        <li><strong>KidzCALL</strong> - Chris Eksteen (Director) – <a
+                                href="mailto:eksteenhc@gmail.com">eksteenhc@gmail.com</a></li>
+
+                        <li><strong>Outward Bound Australia</strong> – Adam Jordan (previous Team Manager Western
+                            Australia) – <a href="mailto:atlasarmoryalaska@gmail.com">atlasarmoryalaska@gmail.com</a>
+                        </li>
+
+                        <li><strong>Outward Bound South Africa</strong> – Mike Wrankmore (previous HR manager) <a
+                                href="mailto:mikewrankmore@vodamail.co.za">mikewrankmore@vodamail.co.za</a></li>
+
+                    </ol>
+                </div>
+            </div>
+
         </div>
 
     </div>
